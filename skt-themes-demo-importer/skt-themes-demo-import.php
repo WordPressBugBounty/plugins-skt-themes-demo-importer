@@ -3,14 +3,14 @@
 Plugin Name: SKT Themes Demo Importer
 Plugin URI: https://wordpress.org/plugins/skt-themes-demo-import/
 Description: Quickly import theme live demo content, widgets and settings. This provides a basic layout to build your website and speed up the development process.
-Version: 1.2
+Version: 1.3
 Author: SKT Themes
 Author URI: https://sktthemes.org/
 License: GPL3
 License URI: https://www.gnu.org/licenses/license-list.html#GNUGPLv3
 Text Domain: skt-themes-demo-import
-Tested up to: 6.3
-Requires PHP: 5.6
+Tested up to: 6.8
+Requires PHP: 8.1.17
 */
 
 // Block direct access to the main plugin file.
