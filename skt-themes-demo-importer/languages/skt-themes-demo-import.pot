@@ -1,27 +1,25 @@
-# Copyright (C) 2016 ProteusThemes 
-# This file is distributed under the GPL 2.0.
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Skt Theme Demo Import 1.2.0\n"
-"Report-Msgid-Bugs-To: http://support.proteusthemes.com/\n"
-"POT-Creation-Date: 2021-06-07 12:54+0530\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: SKT Themes Demo Importer\n"
+"POT-Creation-Date: 2025-07-29 16:20+0530\n"
+"PO-Revision-Date: 2025-07-29 16:20+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"X-Generator: Poedit 1.8.13\n"
-"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
-"_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
-"esc_html_x:1,2c\n"
-"Language: en\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 2.4.3\n"
 "X-Poedit-Basepath: ..\n"
-"X-Textdomain-Support: yes\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: skt-themes-demo-import.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
 #: inc/class-skt-customizer-importer.php:31
 #, php-format
@@ -42,7 +40,8 @@ msgstr ""
 
 #: inc/class-skt-helpers.php:70
 #, php-format
-msgid "\"import_file_url\" or \"local_import_file\" for %s%s%s are not defined!"
+msgid ""
+"\"import_file_url\" or \"local_import_file\" for %s%s%s are not defined!"
 msgstr ""
 
 #: inc/class-skt-helpers.php:176
@@ -75,8 +74,8 @@ msgstr ""
 #, php-format
 msgid ""
 "This WordPress page does not have %sdirect%s write file access. This plugin "
-"needs it in order to save the demo import xml file to the upload directory of "
-"your site. You can change this setting with these instructions: %s."
+"needs it in order to save the demo import xml file to the upload directory "
+"of your site. You can change this setting with these instructions: %s."
 msgstr ""
 
 #: inc/class-skt-helpers.php:352
@@ -89,8 +88,8 @@ msgstr ""
 
 #: inc/class-skt-helpers.php:365
 msgid ""
-"An error occurred while retrieving reading/writing permissions to your server "
-"(could not retrieve WP filesystem credentials)!"
+"An error occurred while retrieving reading/writing permissions to your "
+"server (could not retrieve WP filesystem credentials)!"
 msgstr ""
 
 #: inc/class-skt-helpers.php:373
@@ -150,104 +149,104 @@ msgstr ""
 msgid "not defined!"
 msgstr ""
 
-#: inc/class-skt-main.php:83 inc/class-skt-main.php:102
+#: inc/class-skt-main.php:67 inc/class-skt-main.php:86
 msgid "SKT Theme Demo Importer"
 msgstr ""
 
-#: inc/class-skt-main.php:84
+#: inc/class-skt-main.php:68
 msgid "SKT Import Content"
 msgstr ""
 
-#: inc/class-skt-main.php:105
+#: inc/class-skt-main.php:89
 msgid ""
 "Before you begin, make sure all the plugins required by your theme are "
 "installed and activated."
 msgstr ""
 
-#: inc/class-skt-main.php:113
+#: inc/class-skt-main.php:97
 #, php-format
 msgid ""
 "%sWarning: your server is using %sPHP safe mode%s. This means that you might "
 "experience server timeout errors.%s"
 msgstr ""
 
-#: inc/class-skt-main.php:128
+#: inc/class-skt-main.php:112
 msgid ""
 "Import the live demo content for you newly installed theme which includes "
-"posts, pages, images, widgets, menus and settings. This will provide you with "
-"a basic layout to build your website and speed up the development process. "
-"NOTE: Your existing content will NOT be deleted or modified."
+"posts, pages, images, widgets, menus and settings. This will provide you "
+"with a basic layout to build your website and speed up the development "
+"process. NOTE: Your existing content will NOT be deleted or modified."
 msgstr ""
 
-#: inc/class-skt-main.php:131
+#: inc/class-skt-main.php:115
 msgid ""
 "Click the button once and wait. The import process may take several minutes."
 msgstr ""
 
-#: inc/class-skt-main.php:146
+#: inc/class-skt-main.php:130
 msgid ""
 "There are no predefined import files available in this theme. Please upload "
 "the import files manually!"
 msgstr ""
 
-#: inc/class-skt-main.php:151
+#: inc/class-skt-main.php:135
 msgid "Manually upload the demo files"
 msgstr ""
 
-#: inc/class-skt-main.php:154
+#: inc/class-skt-main.php:138
 msgid "Choose a XML file for content import:"
 msgstr ""
 
-#: inc/class-skt-main.php:159
+#: inc/class-skt-main.php:143
 msgid "Choose a WIE or JSON file for widget import:"
 msgstr ""
 
-#: inc/class-skt-main.php:159 inc/class-skt-main.php:164
+#: inc/class-skt-main.php:143 inc/class-skt-main.php:148
 msgid "(*optional)"
 msgstr ""
 
-#: inc/class-skt-main.php:164
+#: inc/class-skt-main.php:148
 msgid "Choose a DAT file for customizer import:"
 msgstr ""
 
-#: inc/class-skt-main.php:174
+#: inc/class-skt-main.php:158
 msgid "Choose which demo you want to import:"
 msgstr ""
 
-#: inc/class-skt-main.php:199
+#: inc/class-skt-main.php:183
 msgid "Import preview:"
 msgstr ""
 
-#: inc/class-skt-main.php:203 inc/class-skt-main.php:257
+#: inc/class-skt-main.php:187 inc/class-skt-main.php:241
 msgid "No preview image defined for this import."
 msgstr ""
 
-#: inc/class-skt-main.php:225
+#: inc/class-skt-main.php:209
 msgid "Import Demo Content"
 msgstr ""
 
-#: inc/class-skt-main.php:229
+#: inc/class-skt-main.php:213
 msgid "Importing, please wait!"
 msgstr ""
 
-#: inc/class-skt-main.php:314
+#: inc/class-skt-main.php:298
 msgid "Manually uploaded files"
 msgstr ""
 
-#: inc/class-skt-main.php:331 inc/class-skt-main.php:342
+#: inc/class-skt-main.php:315 inc/class-skt-main.php:326
 msgid "Downloaded files"
 msgstr ""
 
-#: inc/class-skt-main.php:338
+#: inc/class-skt-main.php:322
 #, php-format
 msgid "The import files for: %s were successfully downloaded!"
 msgstr ""
 
-#: inc/class-skt-main.php:348
+#: inc/class-skt-main.php:332
 msgid "No import files specified!"
 msgstr ""
 
-#: inc/class-skt-main.php:395
+#: inc/class-skt-main.php:379
 #, php-format
 msgid ""
 "%1$s%3$sThat's it, all done!%4$s%2$sThe demo import has finished. Please "
@@ -255,34 +254,34 @@ msgid ""
 "did, you can deactivate the %3$sSKT Theme Demo Importer%4$s plugin.%5$s"
 msgstr ""
 
-#: inc/class-skt-main.php:406
+#: inc/class-skt-main.php:390
 #, php-format
 msgid ""
 "%1$sThe demo import has finished, but there were some import errors.%2$sMore "
 "details about the errors can be found in this %3$s%5$slog file%6$s%4$s%7$s"
 msgstr ""
 
-#: inc/class-skt-main.php:460
+#: inc/class-skt-main.php:444
 msgid "Max execution time after content import = "
 msgstr ""
 
-#: inc/class-skt-main.php:462
+#: inc/class-skt-main.php:446
 msgid "Importing content"
 msgstr ""
 
-#: inc/class-skt-main.php:501 inc/class-skt-main.php:513
+#: inc/class-skt-main.php:485 inc/class-skt-main.php:497
 msgid "Importing widgets"
 msgstr ""
 
-#: inc/class-skt-main.php:535 inc/class-skt-main.php:543
+#: inc/class-skt-main.php:519 inc/class-skt-main.php:527
 msgid "Importing customizer settings"
 msgstr ""
 
-#: inc/class-skt-main.php:541
+#: inc/class-skt-main.php:525
 msgid "Customizer settings import finished!"
 msgstr ""
 
-#: inc/class-skt-main.php:593
+#: inc/class-skt-main.php:577
 msgid "Completed AJAX call number: "
 msgstr ""
 
@@ -322,185 +321,235 @@ msgstr ""
 msgid "No results for widget import!"
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:129
+#: inc/importer/class-wxr-importer.php:130
 msgid "Could not open the file for parsing"
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:165
-#: inc/importer/class-wxr-importer.php:281
-#: inc/importer/class-wxr-importer.php:354
+#: inc/importer/class-wxr-importer.php:166
+#: inc/importer/class-wxr-importer.php:282
+#: inc/importer/class-wxr-importer.php:355
 #, php-format
 msgid ""
 "This WXR file (version %s) is newer than the importer (version %s) and may "
 "not be supported. Please consider updating."
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:503
+#: inc/importer/class-wxr-importer.php:504
 msgid "The file does not exist, please try again."
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:563
+#: inc/importer/class-wxr-importer.php:564
 msgid "Invalid author mapping"
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:664
+#: inc/importer/class-wxr-importer.php:665
 msgid "Cannot import auto-draft posts"
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:752
+#: inc/importer/class-wxr-importer.php:753
 #, php-format
 msgid "Failed to import \"%s\": Invalid post type %s"
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:762
+#: inc/importer/class-wxr-importer.php:763
 #, php-format
 msgid "%s \"%s\" already exists."
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:840
+#: inc/importer/class-wxr-importer.php:841
 #, php-format
 msgid "Skipping attachment \"%s\", fetching attachments disabled"
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:854
+#: inc/importer/class-wxr-importer.php:855
 #, php-format
 msgid "Failed to import \"%s\" (%s)"
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:886
-#: inc/importer/class-wxr-importer.php:1704
+#: inc/importer/class-wxr-importer.php:887
+#: inc/importer/class-wxr-importer.php:1705
 #, php-format
 msgid "Imported \"%s\" (%s)"
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:891
+#: inc/importer/class-wxr-importer.php:892
 #, php-format
 msgid "Post %d remapped to %d"
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:1035
+#: inc/importer/class-wxr-importer.php:1036
 msgid "Invalid file type"
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:1518
+#: inc/importer/class-wxr-importer.php:1519
 #, php-format
 msgid "Failed to import user \"%s\""
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:1539
+#: inc/importer/class-wxr-importer.php:1540
 #, php-format
 msgid "Imported user \"%s\""
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:1543
+#: inc/importer/class-wxr-importer.php:1544
 #, php-format
 msgid "User %d remapped to %d"
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:1680
+#: inc/importer/class-wxr-importer.php:1681
 #, php-format
 msgid "Failed to import %s %s"
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:1709
+#: inc/importer/class-wxr-importer.php:1710
 #, php-format
 msgid "Term %d remapped to %d"
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:1762
+#: inc/importer/class-wxr-importer.php:1763
 #, php-format
 msgid "Remote server returned %1$d %2$s for %3$s"
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:1775
+#: inc/importer/class-wxr-importer.php:1776
 msgid "Remote file is incorrect size"
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:1780
+#: inc/importer/class-wxr-importer.php:1781
 msgid "Zero size file downloaded"
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:1786
+#: inc/importer/class-wxr-importer.php:1787
 #, php-format
 msgid "Remote file is too large, limit is %s"
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:1808
+#: inc/importer/class-wxr-importer.php:1809
 #, php-format
 msgid "Running post-processing for post %d"
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:1821
+#: inc/importer/class-wxr-importer.php:1822
 #, php-format
 msgid "Could not find the post parent for \"%s\" (post #%d)"
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:1826
+#: inc/importer/class-wxr-importer.php:1827
 #, php-format
 msgid "Post %d was imported with parent %d, but could not be found"
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:1840
+#: inc/importer/class-wxr-importer.php:1841
 #, php-format
 msgid "Could not find the author for \"%s\" (post #%d)"
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:1845
+#: inc/importer/class-wxr-importer.php:1846
 #, php-format
 msgid "Post %d was imported with author \"%s\", but could not be found"
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:1871
+#: inc/importer/class-wxr-importer.php:1872
 #, php-format
 msgid "Post %d was marked for post-processing, but none was required."
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:1882
+#: inc/importer/class-wxr-importer.php:1883
 #, php-format
 msgid "Could not update \"%s\" (post #%d) with mapped data"
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:1927
+#: inc/importer/class-wxr-importer.php:1928
 #, php-format
 msgid "Could not find the menu object for \"%s\" (post #%d)"
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:1932
+#: inc/importer/class-wxr-importer.php:1933
 #, php-format
 msgid ""
-"Post %d was imported with object \"%d\" of type \"%s\", but could not be found"
+"Post %d was imported with object \"%d\" of type \"%s\", but could not be "
+"found"
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:1954
+#: inc/importer/class-wxr-importer.php:1955
 #, php-format
 msgid "Could not find the comment parent for comment #%d"
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:1958
+#: inc/importer/class-wxr-importer.php:1959
 #, php-format
 msgid "Comment %d was imported with parent %d, but could not be found"
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:1972
+#: inc/importer/class-wxr-importer.php:1973
 #, php-format
 msgid "Could not find the author for comment #%d"
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:1976
+#: inc/importer/class-wxr-importer.php:1977
 #, php-format
 msgid "Comment %d was imported with author %d, but could not be found"
 msgstr ""
 
-#: inc/importer/class-wxr-importer.php:1993
+#: inc/importer/class-wxr-importer.php:1994
 #, php-format
 msgid "Could not update comment #%d with mapped data"
 msgstr ""
 
-#: skt-themes-demo-import.php:30
+#: skt-themes-demo-import.php:23
 #, php-format
 msgid ""
 "The %2$sSKT Themes Demo Importer%3$s plugin requires %2$sPHP 5.6+%3$s to run "
 "properly. Please contact your hosting company and ask them to update the PHP "
 "version of your site to at least PHP 5.6.%4$s Your current version of PHP: "
 "%2$s%1$s%3$s"
+msgstr ""
+
+#: skt-themes-demo-import.php:86 skt-themes-demo-import.php:129
+msgid "This website has been created with the help of SKT Themes"
+msgstr ""
+
+#: skt-themes-demo-import.php:87
+msgid "Description"
+msgstr ""
+
+#: skt-themes-demo-import.php:136
+#, php-format
+msgid ""
+"<a href=\"%1$s\" target=\"_blank\">SKT WordPress Themes</a> helps you create "
+"websites effortlessly without any coding knowledge with the help of page "
+"builder."
+msgstr ""
+
+#: skt-themes-demo-import.php:139
+msgid "We also offer free trial themes."
+msgstr ""
+
+#: skt-themes-demo-import.php:141
+#, php-format
+msgid ""
+"So check out <a href=\"%1$s\" target=\"_blank\">SKT free WordPress themes</"
+"a> and take a trial of the theme before making a purchase."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "SKT Themes Demo Importer"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://wordpress.org/plugins/skt-themes-demo-import/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Quickly import theme live demo content, widgets and settings. This provides "
+"a basic layout to build your website and speed up the development process."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "SKT Themes"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://sktthemes.org/"
 msgstr ""

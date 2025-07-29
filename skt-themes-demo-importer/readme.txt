@@ -1,9 +1,8 @@
 === SKT Themes Demo Import ===
 Contributors: SKT Themes
 Tags: import, content, demo, data, widgets, settings
-Requires at least: 5.6
 Tested up to: 6.8
-Stable tag: 1.4
+Stable tag: 1.5
 License: GPLv3 or later
 
 Live demo content can be imported quickly in just one click including all widgets and settings.
@@ -218,6 +217,10 @@ Because your hosting server is making a use of outdated PHP version, this type o
 
 
 == Changelog ==
+**1.5**
+i)  Checked compatibility with WordPress 6.8.2 
+ii) Compatible with PHP 5.6 for legacy websites
+
 **1.4**
 i) Downgrade php version
 

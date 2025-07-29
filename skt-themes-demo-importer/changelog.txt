@@ -1,3 +1,7 @@
+### 1.5
+i) Checked compatibility with WordPress 6.8.2 
+ii) Compatible with PHP 5.6 for legacy websites
+
 ### 1.4
 i) Downgrade php version
 
