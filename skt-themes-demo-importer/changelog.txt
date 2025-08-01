@@ -1,3 +1,6 @@
+### 1.6
+i)  Resolved the image position displacement issue after import.
+
 ### 1.5
 i) Checked compatibility with WordPress 6.8.2 
 ii) Compatible with PHP 5.6 for legacy websites

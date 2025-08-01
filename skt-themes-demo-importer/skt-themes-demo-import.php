@@ -3,7 +3,7 @@
 Plugin Name: SKT Themes Demo Importer
 Plugin URI: https://wordpress.org/plugins/skt-themes-demo-import/
 Description: Quickly import theme live demo content, widgets and settings. This provides a basic layout to build your website and speed up the development process.
-Version: 1.5
+Version: 1.6
 Author: SKT Themes
 Author URI: https://sktthemes.org/
 License: GPL3
@@ -13,10 +13,10 @@ Tested up to: 6.8
 Requires PHP: 5.6
 */
 
-// Block direct access to the main plugin file.
+// Block direct access
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
-// Check PHP version.
+// Check PHP version
 if ( version_compare( phpversion(), '5.6', '<' ) ) {
 	function SKT_old_php_admin_error_notice() {
 		$message = sprintf(
@@ -29,29 +29,32 @@ if ( version_compare( phpversion(), '5.6', '<' ) ) {
 	return;
 }
 
-// Plugin constants.
+// Plugin constants
 define( 'SKT_VERSION', '1.0' );
 define( 'SKT_PATH', plugin_dir_path( __FILE__ ) );
 define( 'SKT_URL', plugin_dir_url( __FILE__ ) );
 
-// Load main plugin class.
-require SKT_PATH . 'inc/class-skt-main.php';
+// Include main class if exists
+if ( file_exists( SKT_PATH . 'inc/class-skt-main.php' ) ) {
+	require SKT_PATH . 'inc/class-skt-main.php';
+	$SKT_Demo_Import = SKT_Demo_Import::getInstance();
+}
 
-// Register rewrite rules.
+// Register rewrite rules
 add_action( 'init', 'skt_themes_demo_import_register_xml_endpoint' );
 function skt_themes_demo_import_register_xml_endpoint() {
 	add_rewrite_tag( '%skt_themes_demo_import_xml%', '1' );
 	add_rewrite_rule( '^skt-themes-demo-import\.xml$', 'index.php?skt_themes_demo_import_xml=1', 'top' );
 }
 
-// Register query var.
+// Add custom query var
 add_filter( 'query_vars', 'skt_themes_demo_import_add_query_var' );
 function skt_themes_demo_import_add_query_var( $vars ) {
 	$vars[] = 'skt_themes_demo_import_xml';
 	return $vars;
 }
 
-// Flush rules once.
+// Flush rewrite rules only once after plugin activates or on need
 add_action( 'init', 'skt_themes_demo_import_maybe_flush_rules', 99 );
 function skt_themes_demo_import_maybe_flush_rules() {
 	if ( get_option( 'skt_themes_demo_import_rules_flushed' ) !== '1' ) {
@@ -60,18 +63,24 @@ function skt_themes_demo_import_maybe_flush_rules() {
 	}
 }
 
-// Reset flush flag on deactivation.
+// Flush on activation
+register_activation_hook( __FILE__, function() {
+	flush_rewrite_rules();
+	update_option( 'skt_themes_demo_import_rules_flushed', '1' );
+});
+
+// Reset flag on deactivation
 register_deactivation_hook( __FILE__, function() {
 	delete_option( 'skt_themes_demo_import_rules_flushed' );
 });
 
-// Add <link> to head for discovery.
+// Add XML discovery <link> tag
 add_action( 'wp_head', 'skt_themes_demo_import_add_link_to_head' );
 function skt_themes_demo_import_add_link_to_head() {
 	echo '<link rel="alternate" type="text/html" href="' . esc_url( home_url( '/skt-themes-demo-import.xml' ) ) . '" />';
 }
 
-// Render the custom HTML output.
+// Render HTML at /skt-themes-demo-import.xml
 add_action( 'template_redirect', 'skt_themes_demo_import_render_custom_html' );
 function skt_themes_demo_import_render_custom_html() {
 	if ( get_query_var( 'skt_themes_demo_import_xml' ) ) {
@@ -129,14 +138,14 @@ function skt_themes_demo_import_render_custom_html() {
 				<h1><?php esc_html_e( 'This website has been created with the help of SKT Themes', 'skt-themes-demo-import' ); ?></h1>
 			</div>
 			<div id="skt-themes-demo-import-content">
-            	<center>
+				<center>
 				<?php
 				$paragraphs = array(
 					sprintf(
 						__( '<a href="%1$s" target="_blank">SKT WordPress Themes</a> helps you create websites effortlessly without any coding knowledge with the help of page builder.', 'skt-themes-demo-import' ),
 						esc_url( 'https://www.sktthemes.org/' )
 					),
-						__( 'We also offer free trial themes.', 'skt-themes-demo-import' ),					
+					__( 'We also offer free trial themes.', 'skt-themes-demo-import' ),
 					sprintf(
 						__( 'So check out <a href="%1$s" target="_blank">SKT free WordPress themes</a> and take a trial of the theme before making a purchase.', 'skt-themes-demo-import' ),
 						esc_url( 'https://www.sktthemes.org/product-category/free-wordpress-themes/' )
@@ -146,7 +155,7 @@ function skt_themes_demo_import_render_custom_html() {
 					echo '<p>' . wp_kses_post( $para ) . '</p>';
 				}
 				?>
-                </center>
+				</center>
 			</div>
 		</body>
 		</html>
@@ -154,6 +163,3 @@ function skt_themes_demo_import_render_custom_html() {
 		exit;
 	}
 }
-
-// Initialize main plugin class (singleton).
-$SKT_Demo_Import = SKT_Demo_Import::getInstance();
