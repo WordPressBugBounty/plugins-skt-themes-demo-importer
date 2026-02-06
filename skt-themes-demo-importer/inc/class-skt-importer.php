@@ -31,7 +31,12 @@ class SKT_Importer {
 		defined( 'WP_LOAD_IMPORTERS' ) || define( 'WP_LOAD_IMPORTERS', true );
 		include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 		if ( !is_plugin_active( 'theme-demo-import/theme-demo-import.php' ) ){
-			require ABSPATH . '/wp-admin/includes/class-wp-importer.php';
+			if ( ! class_exists( 'WP_Importer' ) ) {
+				$class_wp_importer = ABSPATH . 'wp-admin/includes/class-wp-importer.php';
+				if ( file_exists( $class_wp_importer ) ) {
+					require $class_wp_importer;
+				}
+			}
 		}
 		require SKT_PATH . 'inc/class-skt-wxr-importer.php';
 	}

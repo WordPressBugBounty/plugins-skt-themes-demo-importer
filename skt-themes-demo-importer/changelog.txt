@@ -1,3 +1,7 @@
+### 1.7
+i)  Resolved confilict with WordPress Importer plugin.
+ii) Compatibility with WordPress 6.9.
+
 ### 1.6
 i)  Resolved the image position displacement issue after import.
 
